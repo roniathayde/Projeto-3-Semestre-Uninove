@@ -1,0 +1,16 @@
+/* config iniciais */
+:root {
+    --azul1: #375ec1;
+    --meio-cinza: rgb(68,84,106);
+    --laranja: rgb(237,125,49);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,400&display=swap');
+
+html,body,*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+
+}
