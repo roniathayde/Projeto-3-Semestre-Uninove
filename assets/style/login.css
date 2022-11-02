@@ -30,6 +30,13 @@
     margin: 20px;
 }
 /* formulario */
+
+.login_form--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .login_form--form,
 .login_form--cad{
     display: flex;
@@ -109,6 +116,10 @@
     font-weight: 600;
 }
 
+.login_form--cad{
+    display: none;/***ssss****/
+}
+
 .login_form--cad_wp{
     display: grid;
     justify-items: center;
@@ -125,7 +136,8 @@
 
 
 /* não tem cadastro */
-.login_form_semconta{
+.login_form_semconta,
+.login_form_temconta{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,9 +147,14 @@
     margin: 20px;
 }
 
-.login_form_semconta--link{
+.login_form_semconta--link,
+.login_form_temconta--link{
     color: var(--azul1);
     text-decoration: none ;
     font-weight: 600;
     margin-top: 10px;
 }
+
+
+/* tem cadastro?*/
+

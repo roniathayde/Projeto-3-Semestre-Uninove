@@ -23,28 +23,32 @@
             </article>
     
             <article class="login_form">
-                <form action="" class="login_form--form">
-                    <h2>Login</h2>
-
-                    <a href="" class="login_form--form_logo">
-                        <img src="./assets/images/logo-header.jpg" alt="" class="login_form--form_logo">
-                    </a>
+                <section class="login_form--container">
+                    <form action="" class="login_form--form">
+                        <h2>Login</h2>
     
-                    <input type="text" name="" id="" class="login_form--form--user">
-                    
-                    <input type="password" name="" id="" class="login_form--form--password">
-                    
-                    <input type="submit" value="Entrar" class="login_form--form--password">
-                    
-                    <div class="login_form--form--ou"> OU </div>
-                    
-                    <a href="" class="login_form--form--esqueceu">Esqueceu a senha?</a>
-                </form>
-
-                <div class="login_form_semconta">
-                    <p class="login_form_semconta--info">Não tem uma conta?</p>
-                    <a href="#" class="login_form_semconta--link">Cadastre-se</a>
-                </div>
+                        <a href="index.html" class="login_form--form_logo">
+                            <img src="./assets/images/logo-header.jpg" alt="" class="login_form--form_logo">
+                        </a>
+        
+                        <input type="text" name="" id="" class="login_form--form--user">
+                        
+                        <input type="password" name="" id="" class="login_form--form--password">
+                        
+                        <input type="submit" value="Entrar" class="login_form--form--password">
+                        
+                        <div class="login_form--form--ou"> OU </div>
+                        
+                        <a href="" class="login_form--form--esqueceu">Esqueceu a senha?</a>
+                    </form>
+    
+                    <div class="login_form_semconta">
+                        <p class="login_form_semconta--info">Não tem uma conta?</p>
+                        <a href="#" class="login_form_semconta--link">Cadastre-se</a>
+                    </div>
+                </section>
+                
+                <!-- FORMS CADASTRE-SE -->
                 
                 <form action="" class="login_form--cad">
                     <h2>Cadastre-se</h2>
@@ -53,9 +57,9 @@
                         <img src="./assets/images/logo-header.jpg" alt="" class="login_form--form_logo">
                     </a>
 
-                    <input type="text" placeholder="Nome completo">
+                    <input type="text" maxlength="11" placeholder="Nome completo">
 
-                    <input type="number" name="" id="" minlength="11" maxlength="11" placeholder="CPF">
+                    <input type="number" name="" id=""  placeholder="CPF">
 
                     <input type="date" name="" id="" placeholder="Data de nascimento">
 
@@ -78,6 +82,13 @@
                     <p>Ao se cadastrarm você concorda com nossos Termos, Pokítica de Privacidade e Política de Cookies.</p>
 
                     <input type="submit" value="Cadastre-se">
+
+                    <div class="login_form_temconta">
+                        <p class="login_form_temconta--info">Já tem uma conta?</p>
+                        <a href="#" class="login_form_temconta--link">Entrar</a>
+                    </div>
+
+
                 </form>
     
     
@@ -86,5 +97,7 @@
         </div>
 
     </section>
+
+    <script src="./assets/js/login.js"></script>
 </body>
 </html>
