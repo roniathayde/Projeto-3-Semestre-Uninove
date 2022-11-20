@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Mechanical</title>
 
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/91dee05415.js" crossorigin="anonymous"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/style/style.css">
 
@@ -27,13 +30,17 @@
         <div class="header_wpnav">
             <a href="login.html" class="nav-btn--login">Login</a>
 
+            <i class="fa-solid fa-bars hamburguer-menu"></i>
             <nav class="header_wpnav--nav">
-                <a href="#home" class="nav-btn">Home</a>
-                <a href="#servicos" class="nav-btn">Serviços</a>
-                <a href="#agendamento" class="nav-btn">Agendamento</a>
-                <a href="#parceiros" class="nav-btn">Parceiros</a>
-                <a href="#sobrenos" class="nav-btn">Sobre nós</a>
-                <a href="#contato" class="nav-btn">Contato</a>
+                <div>
+                    <i class="fa-solid fa-xmark close-menu-btn"></i>
+                    <a href="#home" class="nav-btn">Home</a>
+                    <a href="#servicos" class="nav-btn">Serviços</a>
+                    <a href="#agendamento" class="nav-btn">Agendamento</a>
+                    <a href="#parceiros" class="nav-btn">Parceiros</a>
+                    <a href="#sobrenos" class="nav-btn">Sobre nós</a>
+                    <a href="#contato" class="nav-btn">Contato</a>
+                </div>
             </nav>
         </div>
         
@@ -92,6 +99,7 @@
     <!-- serviços -->
     <section id="servicos" class="servicos">
         <h2 class="servicos--titulo">Serviços</h2>
+        
 
         <div class="servicos-wp">
             <article class="servicos_article">
@@ -175,15 +183,16 @@
                     <h3 class="sobrenos_infos_article--titulo">Missão</h3>
 
                     <div class="sobrenos_infos_article-card">
-                        <p class="sobrenos_infos_article-card--desc">Faça login e veja as oficinas existentes na sua região.</p>
+                        <p class="sobrenos_infos_article-card--desc">Ser a maior plataforma de reserva de serviços automotivos, utilizando do melhor que a tecnologia pode oferecer. 
+                        </p>
                     </div>
                 </div>
 
                 <div class="sobrenos_infos_article">
-                    <h3 class="sobrenos_infos_article--titulo">Visãp</h3>
+                    <h3 class="sobrenos_infos_article--titulo">Visão</h3>
 
                     <div class="sobrenos_infos_article-card">
-                        <p class="sobrenos_infos_article-card--desc">Faça login e veja as oficinas existentes na sua região.</p>
+                        <p class="sobrenos_infos_article-card--desc">Ser o melhor consultor de serviços automotivos aumentando a comunicação entre cliente e prestador de serviços.</p>
                     </div>
                 </div>
 
@@ -191,7 +200,7 @@
                     <h3 class="sobrenos_infos_article--titulo">Valores</h3>
 
                     <div class="sobrenos_infos_article-card">
-                        <p class="sobrenos_infos_article-card--desc">Faça login e veja as oficinas existentes na sua região.</p>
+                        <p class="sobrenos_infos_article-card--desc">Prezamos por um trabalho confiável em que o cliente não perca tempo e dinheiro.</p>
                     </div>
                 </div>
             </article>
@@ -229,6 +238,6 @@
             </form>
     </section>
 
-
+<script src="./assets/js/index.js"></script>
 </body>
 </html>

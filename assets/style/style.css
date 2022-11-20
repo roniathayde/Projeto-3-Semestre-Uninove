@@ -6,6 +6,7 @@
 
 body{
     height: 200vh;
+    position: relative;
 }
 
 /* header navegação */
@@ -45,6 +46,15 @@ body{
     display: flex;
     align-items: center;
 }
+
+.header_wpnav--nav > div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
 
 .nav-btn--login{
     padding: 4px 20px;
@@ -268,7 +278,7 @@ body{
     justify-content: center;
     width: 100%;
     max-width: 500px;
-    margin: 30px;
+    padding: 30px;
 }
 
 .parceiros_wp_article--img{
@@ -450,3 +460,87 @@ body{
     cursor: pointer;
 }
 
+.hamburguer-menu{
+    display: none;
+}
+
+
+@media (max-width: 875px){
+
+    .sobrenos_historia_logoct{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header_wpnav{
+        position: relative;
+    }
+
+    .cards,
+    .servicos-wp,
+    .parceiros_wp,
+    .sobrenos_historia,
+    .contato_form,
+    .sobrenos_infos{
+        flex-direction: column;
+    }
+
+    .form--wp{
+        margin: 20px 0;
+    }
+
+    .header_wpnav--nav{
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+    }   
+
+    .header_wpnav--nav > div{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header_wpnav.menu-ativado .header_wpnav--nav{
+        display: flex;
+    }
+    
+    .header_wpnav.menu-ativado .close-menu-btn{
+        display: flex;
+        font-size: 25px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 20px;
+    }
+
+    .hamburguer-menu{
+        display: flex;
+        font-size: 25px;
+        margin: 5px 12px;
+        cursor: pointer;
+    }
+
+}
+
+.close-menu-btn{
+    display: none;
+}
+
+/* classe para ativar o menu */
+
+.header_wpnav.menu-ativado{
+    background-color: red;
+}
